@@ -41,8 +41,9 @@
       <!-- Add Burger Menu -->
 
 <main>
- <!-- Welcome -->
-<section id="welcome" class="welcome">
+        <!-- Welcome -->
+
+<section id="welcome" class="welcome pt-5">
         <div class="welcome-content">
             <div class="title">
                 <p class="welcome-text">Hi, I'm</p>
@@ -127,7 +128,7 @@
      <!-- Portfolio -->
 
     <div class="portfolio mb-3" id='portfolio'>
-        <h3 class="section-title text-center mt-5">Portfolio</h3>
+        <h3 class="section-title text-center pt-5">Portfolio</h3>
         <div class="container mb-3">
         <div class="row">
             <div class="col-sm-6">
@@ -166,36 +167,45 @@
     </div>
     </section>
 
-     <!-- Contact -->
+     <!-- Contact Info -->
       
-    <section class="slanted-edge-four" id='contact'>
-        <h2 class="section-title text-center mb-3">Contact</h2>
-        <div class="container contact">
-        <form class="">
-            <div class="row g-3">
-              <div class="col-sm g-3">
-                <input type="text" class="form-control" placeholder="First name">
-              </div>
-              <div class="col-sm g-3">
-                <input type="text" class="form-control" placeholder="Email">
-              </div>
-            </div>
-            <div class="row">
-                <div class="col g-3">
-                <input type="text" class="form-control" placeholder="Phone">
+    <section class="slanted-edge-four contact-info " id='contact'>
+        <h2 class="section-title text-center mb-3 pt-1">Get In Touch</h2>
+    
+        <div class="d-flex justify-content-between   p-5">
+            <div class="contact-box p-3 d-flex flex-column justify-content-center">
+                <div>
+                    <i class="fa-solid fa-phone"></i>
                 </div>
-            </div>
-            <div class="row " >
-                <div class="col g-3">
-                    <textarea class="form-control"></textarea>
+            </div>   
+            <div class="contact-box p-3 d-flex flex-column justify-content-center">
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
                 </div>
-            </div>
-            <div class="row mx-auto d-block">
-                <button type="submit" class="btn btn-primary text-center ">Submit</button>
-            </div>
-          </form>
+            </div>   
+            <div class="contact-box p-3 d-flex flex-column justify-content-center">
+                <div>
+                    <i class="fa-brands fa-linkedin"></i>                </div>
+            </div>   
         </div>
-        </div>
+    </section>
+
+    <!-- Contact Form -->
+
+    <section class="contact" >
+        <h2 class="section-title text-center">Reach Out</h2>
+        <form>
+            <fieldset>
+                <div class="row">
+                    <div>
+                        <input placeholder="First and Last Name"></input>
+                    </div>
+                </div>
+                <input placeholder="Phone"></input>
+                <input placeholder="Email"></input>
+                <textarea placeholder="A nice message"></textarea>
+            </fieldset>
+        </form>
     </section>
 </main>
      <!-- Footer -->

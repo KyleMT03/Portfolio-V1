@@ -19,21 +19,7 @@
     overflow-x: clip;
 }
 
-::-webkit-scrollbar {
-    height: 12px;
-    width: 12px;
-    background: #000; 
-    z-index:5;
-}
 
-::-webkit-scrollbar-thumb {
-    background: white;
-    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
-}
-
-::-webkit-scrollbar-corner {
-    background: #000;
-}
 
 /* Reconfigure Font-Awesome Icons */
 
@@ -130,13 +116,19 @@ nav {
 
 .burger {
     display:none;
+    
 }
 
 .burger div {
     height:6px;
     width:30px;
+    border-radius:6px;
     background-color: white;
     margin-bottom:4px;
+}
+
+.burger:last-child {
+    margin-bottom:0px;
 }
 
 /* Welcome */
@@ -387,11 +379,11 @@ nav {
 }
 
 
-/* Contact */ 
+/* Contact-Info */ 
 
 .slanted-edge-four {
     position: relative;
-    min-height: 90vh;
+    min-height: 40vh;
     background:var(--lightblue);
     padding-top:6em;
     border:0;
@@ -409,14 +401,34 @@ nav {
     border:0;
 }
 
-.contact {
-    padding:3em;
+.contact-box {
+    background-color: var(--gray);
+    box-shadow:1px 1px 2px rgb(0 0 0 / 50%);
+    color:var(--white)
 }
 
-input {
-    font-size:1em;
-    padding:1em;
-    border-radius:1em;
+
+
+/* Contact-Submit */ 
+
+.contact {
+    position: relative;
+    min-height: 60vh;
+    background:var(--gray);
+    padding-top:6em;
+    border:0;
+}
+
+.contact:before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    right:0;
+    width:100%;
+    height:125px;
+    background:var(--lightblue);
+    clip-path: polygon(0% 50%,110% 0%,0% 0%);
+    border:0;
 }
 
 /* Footer */ 
@@ -424,6 +436,36 @@ input {
 footer {
     min-height:10vh;
     background:var(--black);
+}
+@media (max-width:600px) {
+    /* Reconfigure */ 
+    .btn-primary {
+        background-color: var(--blue);
+        color:var(--white); 
+        border:none;
+        border-radius:2em;
+        padding:1em;
+        width:8em;
+        font-size:1em;
+        margin:1em 1em 0em 0em;
+    }
+    .section-title {
+        font-size:2em;
+    }
+    .welcome-header {
+        font-size:3.5em;
+    }
+    
+    .welcome-subheader {
+        font-size:2.5em;
+        color:var(--blue);
+        margin-bottom:0em;
+    }
+    
+    .welcome-text {
+        font-size: 1.25em;
+        margin:.5em 0;
+    }
 }
 
 @media (max-width:900px) {
