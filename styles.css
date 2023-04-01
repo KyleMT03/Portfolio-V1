@@ -404,7 +404,16 @@ nav {
 .contact-box {
     background-color: var(--gray);
     box-shadow:1px 1px 2px rgb(0 0 0 / 50%);
-    color:var(--white)
+    color:var(--white);
+    border-radius: 1em;
+    padding:1em;
+}
+.contact-box:hover {
+    opacity:80%;
+    cursor:pointer;
+}
+.contact-icon {
+    font-size:5em;
 }
 
 
@@ -415,8 +424,8 @@ nav {
     position: relative;
     min-height: 60vh;
     background:var(--gray);
-    padding-top:6em;
     border:0;
+    padding: 6em 6em 6em 6em;
 }
 
 .contact:before {
@@ -429,6 +438,34 @@ nav {
     background:var(--lightblue);
     clip-path: polygon(0% 50%,110% 0%,0% 0%);
     border:0;
+}
+
+.form-container {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    width:100%;
+}
+.form-grid {
+    width:100%;
+    display:grid; 
+    grid-template-columns: 1fr 1fr;
+    gap:.75em;
+}
+
+.form-submit {
+    margin: 0 auto;
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+
+input, textarea {
+    padding:.5em;
+    border-radius:1em;
+    border:0;
+    font-size:1em;
 }
 
 /* Footer */ 
@@ -465,6 +502,23 @@ footer {
     .welcome-text {
         font-size: 1.25em;
         margin:.5em 0;
+    }
+    /* Contact @600px */ 
+    .contact-icon {
+        font-size:1em;
+    }
+    .span-1 {
+        grid-column: span 2;
+    }
+    .span-2 {
+        grid-column: span 2;
+    }
+    .form-submit {
+        width:100%;
+        margin:0;
+    }
+    .contact {
+        padding: 6em 3em 3em 3em;
     }
 }
 
@@ -509,8 +563,9 @@ footer {
     text-align: center;
 }
 /* Contact */
-form {
-   gap:1em;
+
+.contact-icon {
+    font-size:3em;
 }
 
 

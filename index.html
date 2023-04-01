@@ -21,7 +21,7 @@
             <li class="nav-item"><a href='#portfolio' class="nav-link">Portfolio</a></li>
             <li class="nav-item"><a href='#contact' class="nav-link">Contact</a></li>
             <li class="nav-item">
-                <a href='#'><i class="fa-brands fa-linkedin"></i></a>
+                <a href='#'><i class="fa-brands fa-linkedin"></i></a> 
             </li >
             <li class="nav-item">
                 <a href='#'><i class="fa-brands fa-facebook"></i></a>
@@ -61,9 +61,9 @@
      <!-- About -->
     
     <section id='about' class="about-section">
-        <h2 class="section-title about-title mb-5" >About Me</h2>
         <div class="about-content">
             <div class="about-text">
+                <h2 class="section-title about-title mb-5" >About Me</h2>
                 <p class="text skills-text">
                     lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
                 </p>
@@ -169,41 +169,39 @@
 
      <!-- Contact Info -->
       
-    <section class="slanted-edge-four contact-info " id='contact'>
+    <section class="slanted-edge-four contact-info pb-5 " id='contact'>
         <h2 class="section-title text-center mb-3 pt-1">Get In Touch</h2>
     
-        <div class="d-flex justify-content-between   p-5">
+        <div class="d-flex justify-content-around">
             <div class="contact-box p-3 d-flex flex-column justify-content-center">
-                <div>
-                    <i class="fa-solid fa-phone"></i>
+                <div class="text-center">
+                    <i class="fa-solid fa-phone contact-icon"></i>
+                </div>
+            </div>   
+            <div class="contact-box p-3 d-flex flex-column justify-content-center">
+                <div class="text-center">
+                    <i class="fa-solid fa-envelope contact-icon"></i>
                 </div>
             </div>   
             <div class="contact-box p-3 d-flex flex-column justify-content-center">
                 <div>
-                    <i class="fa-solid fa-envelope"></i>
-                </div>
-            </div>   
-            <div class="contact-box p-3 d-flex flex-column justify-content-center">
-                <div>
-                    <i class="fa-brands fa-linkedin"></i>                </div>
+                    <i class="fa-brands fa-linkedin  contact-icon"></i>                </div>
             </div>   
         </div>
     </section>
 
     <!-- Contact Form -->
 
-    <section class="contact" >
-        <h2 class="section-title text-center">Reach Out</h2>
-        <form>
-            <fieldset>
-                <div class="row">
-                    <div>
-                        <input placeholder="First and Last Name"></input>
-                    </div>
-                </div>
-                <input placeholder="Phone"></input>
-                <input placeholder="Email"></input>
-                <textarea placeholder="A nice message"></textarea>
+    <section class="contact">
+        <h2 class="section-title text-center pb-3">Reach Out</h2>
+        <form class="form-container">
+            <fieldset class="form-grid">
+                <input class="span-1" placeholder="First Name">
+                <input class="span-1" placeholder="Last Name">
+                <input  class="span-2"  placeholder="Phone">
+                <input  class="span-2"  placeholder="Email">
+                <textarea  class="span-2"  placeholder="Send Me A Message!"></textarea>
+                <input class="span-2 form-submit btn-primary" type="submit">
             </fieldset>
         </form>
     </section>
